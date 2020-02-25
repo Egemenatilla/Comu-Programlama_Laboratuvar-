@@ -1,0 +1,9 @@
+#Üst alma işlemi (fonksiyon)
+def power(a,b):
+    if b==0:
+        return 1
+    elif b==1:
+        return a
+    else:
+        return a*power(a,b-1)
+print(power(2,3)) #istenilen değerler girildiğinde işlemin sonucunu çıktı olarak ekrana yazdırır.
