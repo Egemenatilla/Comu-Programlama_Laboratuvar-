@@ -1,0 +1,34 @@
+# küme oluşturma
+from sympy import FiniteSet
+from fractions import Fraction
+s = FiniteSet(1,1.5,Fraction(1.5),Fraction(2.5),3.5)
+for member in s:
+    print(member)
+
+t = FiniteSet(1,Fraction(4.5),4.5,6)
+if s==t:
+    print("True")
+else:
+    print("FALSE")
+#s.intersect(t) kesişimlerini alır
+#s.union(t)  birleşimlerini alır
+print("***************************************")   
+liste_2 = [1,4,7,84,3,6,2,62]
+my_d = dict()
+my_d = {1:'Bir',2:2,'3':'Three'}
+
+for key in my_d.keys():
+    print(key,my_d[key])
+if -10 not in my_d:   # -10 adlı bir key yoksa 
+    my_d[-10] = 50    # -10 aldı key'e 50yi ata
+print("***************************************")  
+def my_h(liste_2):
+    my_d = {}
+    if i not in my_d:
+        my_d[i] = 1
+    else:
+        my_d[i] = i+1
+    return my_d
+
+liste_2 = [1,4,7,84,3,6,2,62]
+print(my_h(liste_2))
