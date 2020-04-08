@@ -55,10 +55,10 @@ def bubble_sort(liste):
 with open(sys.argv[1]+"/input_hw_2.csv","r") as file:
     content = file.read()
     i=0
-    insan = content.split(";")
+    human = content.split(";")
     date = []
-    for i in range(3,len(insan),3):
-        date.append(insan[i].split("-"))
+    for i in range(3,len(human),3):
+        date.append(human[i].split("-"))
     
     #print(date[0][1])
     fired_month = []
