@@ -1,2 +1,2 @@
-Medyan 39.5
-Ortalama 25
+Medyan 45
+Ortalama 44
