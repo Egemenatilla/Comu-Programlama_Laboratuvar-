@@ -1,3 +1,8 @@
+'''
+Egemen ATİLLA 170401026
+https://github.com/Egemenatilla/Comu-Programlama_Laboratuvar--/blob/master/170401026_hw_3.py
+'''
+
 import sympy as sym
 from sympy import Symbol
 from sympy import pprint
@@ -7,8 +12,7 @@ number = 170401026
 l = Symbol('lambda')
 x = Symbol('x')
 
-mod = sym.Mod(number, 4) #sympy kütüphanesinde mod almak için kullanılır
-#print(mod)
+
 
 #Poisson Dağılımı:Olasılık kuramı ve istatistik bilim kollarında bir ayrık olasılık dağılımı olup belli bir sabit zaman birim aralığında
 #meydana gelme sayısının olasılığını ifade eder.
