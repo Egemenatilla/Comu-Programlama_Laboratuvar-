@@ -8,7 +8,7 @@ from sympy import Symbol
 from sympy import pprint
 import matplotlib.pyplot as plt
 
-number = 170401026
+
 l = Symbol('lambda')
 x = Symbol('x')
 
