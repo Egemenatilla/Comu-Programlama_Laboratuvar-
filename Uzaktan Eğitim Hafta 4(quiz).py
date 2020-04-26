@@ -1,8 +1,8 @@
 #--------------------------------------------------------------------------------------------------------------------------
 '''
-Min heapify: Min heap'e göre verilmiş bir array'i düzenler.(En küçük eleman kökte)
+min heapify: Min heap'e göre verilmiş bir array'i düzenler.(En küçük eleman kökte)
 (array bir dizi tutar, i ise kontrol sırasında küçük olan elemanın indexini tutar)
-Build min heap: Arraydeki tüm elamanları gönderdik.Tersten başlayacak şekilde bir dizi oluşturdu ve çağırdı.
+build min heap: Arraydeki tüm elamanları gönderdik.Tersten başlayacak şekilde bir dizi oluşturdu ve çağırdı.
 (parametre olarak array gönderdik)
 Insert ıtem to heap: Parametre olarak gönderdiğimiz elemanı heap e uygun bir şekilde ilgili yapıya ekledi.
 (heapArray bir dizi tutar,key ise eklenecek olan değeri tutar)
@@ -33,23 +33,23 @@ def build_min_heap(array): #arraydeki tum elemanlar için çağırdık.Tersten b
         min_heapify(array, i)
         
 #--------------------------------------------------------------------------------------------------------------------------
-def insertItemToHeap(heapArray,key):#Başta tek elemanlı ve heap durumunda,eleman eklediğimiz sürece heap durumunda ekler.
-    heapArray.append(key)
-    index = len(heapArray)-1
+def insertItemToHeap(myheap_1,item):#Başta tek elemanlı ve heap durumunda,eleman eklediğimiz sürece heap durumunda ekler.
+    myheap_1.append(item)
+    index = len(myheap_1)-1
     if index<=0:
         return    
     parent = (index-1)//2
-    while parent>=0 and heapArray[parent] > heapArray[index]:
-        heapArray[parent],heapArray[index] = heapArray[index],heapArray[parent]            
+    while parent>=0 and myheap_1[parent] > myheap_1[index]:
+        myheap_1[parent],myheap_1[index] = myheap_1[index],myheap_1[parent]            
         index = parent
         parent = (index-1)//2
     
-def removeItemFromHeap(myheap):#Heap yapısında sondaki  elemanı siler.
-    index = len(myheap)
+def removeItemFromHeap(myheap_1):#Heap yapısında sondaki  elemanı siler.
+    index = len(myheap_1)
     if index<=0:
         print("Heap'te eleman yok.")
         return
-    myheap.pop()
+    myheap_1.pop()
 #--------------------------------------------------------------------------------------------------------------------------
 def heapsort(array):
     array = array.copy() #
