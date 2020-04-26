@@ -5,7 +5,7 @@ min heapify: Min heap'e göre verilmiş bir array'i düzenler.(En küçük elema
 build min heap: Arraydeki tüm elamanları gönderdik.Tersten başlayacak şekilde bir dizi oluşturdu ve çağırdı.
 (parametre olarak array gönderdik)
 Insert ıtem to heap: Parametre olarak gönderdiğimiz elemanı heap e uygun bir şekilde ilgili yapıya ekledi.
-(heapArray bir dizi tutar,key ise eklenecek olan değeri tutar)
+(myheap_1 bir dizi tutar,item ise eklenecek olan değeri tutar)
 Remove item from heap : En sonda bulunan elemanı heap yapısından sildi.
 (Parametre olarak yollanan heap yapısından sondaki elemanla kökteki elemanı yer değiştirir yani en küçük elemanı siler)
 Heap sort : Bir sıralama algoritması Heap yapısına göre dizideki değerleri sıralar.
